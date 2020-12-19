@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:id="@+id/constraintLayoutCustomRow">
+
+    <TextView
+        android:id="@+id/textViewRowName"
+        android:layout_width="167dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Somya Tomar"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRowEmail"
+        android:layout_width="161dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="somtom@gmail.com"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewRowName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/textViewRowRupee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:text="₹"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewRowName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRowEmail" />
+
+    <TextView
+        android:id="@+id/textViewRowAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:text="100000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewRowRupee"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRowEmail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
